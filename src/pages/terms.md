@@ -1,53 +1,51 @@
 ---
-title: 'Terms and Conditions'
+title: 'TÉRMINOS Y CONDICIONES'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: January 06, 2023
+_Ultima vez actualizado_: Abril 03, 2023
 
-Please read these terms and conditions carefully before using Our Service.
+<!-- Please read these terms and conditions carefully before using Our Service. -->
 
-## Interpretation and Definitions
+<!-- ## Interpretation and Definitions
 
-### Interpretation
+### Interpretation -->
 
-The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+Estos son los términos y condiciones del Sitio Web de ENALOC MEXICO, valoramos su privacidad y estamos comprometidos a proteger su información personal que será proporcionada. Esta Política de Privacidad refiere cómo recopilamos, utilizamos y salvaguardamos sus datos cuando utiliza nuestra plataforma el acceso y la utilización del PORTAL será gratuito. Asimismo, el USUARIO declara y está obligado a: Registrarse y/o inscribirse proporcionando información veraz y lícita para acceder a ciertos servicios y/o contenidos de ENALOC MEXICO.
 
-### Definitions
+En caso de que el USUARIO diera información falsa, inexacta o confusa, se le podrá negar el acceso al utilizar el portal, usted acepta las prácticas descritas en esta Política de Privacidad. 
 
-For the purposes of these Terms and Conditions:
+### Aceptación de Términos y Condiciones 
 
-- **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+Es responsabilidad de todo usuario leer los presentes términos y condiciones de uso, por lo que, al acceder a El Sitio, el usuario acepta de manera incondicional y plena los términos y condiciones establecidos en el presente documento. Por lo anterior, se recomienda la visita periódica a la sección de términos y condiciones. 
 
-- **Country** refers to: California, United States
+El usuario será responsable por cualquier uso indebido, anormal o ilícito que se haga de El Sitio y sus contenidos. En especial, el usuario se compromete a no: 
 
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AstroWind LLC, 1 Cupertino, CA 95014.
+- **No descargar** las imágenes, textos y demás contenido publicado en el sitio Web, a menos que expresamente se mencione lo contrario. 
 
-- **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+- **No utilizar** contenidos (imágenes, textos, vídeos) para publicidad sin previa autorización.
 
-- **Service** refers to the Website.
+- **No realizar** actividades técnicas que impidan la libre administración, uso y publicación de los contenidos por parte de los administradores debidamente autorizados por ENALOC MEXICO. 
 
-- **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement is a Demo.
+- **No incurrir** en conductas ilícitas como daños o ataques informáticos, interceptación de comunicaciones, infracciones al derecho de autor, uso no autorizado de terminales, usurpación de identidad, revelación de secretos o falsedad en los documentos. 
 
-- **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
+- **No publicar** contenido pornográfico, injurioso, falso y en general cualquier contenido que atente contra la seguridad y la sana convivencia. 
+
+- **No alterar** el uso de las marcas, logos y demás signos distintivos, tanto de ENALOC MEXICO, como de terceros que aparezcan en El Sitio. 
+
+<!-- - **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
 
 - **Website** refers to AstroWind, accessible from [https://astrowind.vercel.app](https://astrowind.vercel.app)
 
-- **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+- **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable. -->
 
-## Acknowledgment
+## Ley aplicable y resolución de controversias 
 
-These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.
+Cualquier conflicto generado por la interpretación de los presentes términos y condiciones será resuelto bajo lo establecido en la normativa interna de ENALOC MEXICO, y en los aspectos que no estén expresamente regulados en ellas, por lo establecido en las leyes vigentes de México. Cualquier conflicto o controversia generado por el cumplimiento de estos términos y condiciones se resolverá en primer lugar mediante arreglo directo entre las partes, transacción directa o conciliación y según con los procedimientos legales establecidos en las leyes. 
 
-Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.
+En todo caso, el usuario entiende y acepta que ENALOC MEXICO, se reserva el derecho de tomar acciones de índole administrativo y legal contra cualquier usuario que, a juicio de ENALOC MEXICO, haga uso indebido de El Sitio. Lo anterior implica que el usuario se hace responsable de indemnizar cualquier daño causado, como a terceros que vean vulnerados sus derechos con su actuación. 
 
-By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.
-
-You represent that you are over the age of 18\. The Company does not permit those under 18 to use the Service.
-
-Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
-
-## Links to Other Websites
+<!-- ## Links to Other Websites
 
 Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
 
@@ -62,7 +60,7 @@ We may terminate or suspend Your access immediately, without prior notice or lia
 Upon termination, Your right to use the Service will cease immediately.
 
 ## Limitation of Liability
-
+ 
 Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.
 
 To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.
@@ -111,10 +109,10 @@ These Terms and Conditions may have been translated if We have made them availab
 
 We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.
 
-By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
+By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service. -->
 
-## Contact Us
+## Contacto para más información
 
-If you have any questions about these Terms and Conditions, You can contact us:
+Si tiene alguna pregunta, inquietud o solicitud con respecto a los Términos y Condiciones, comuníquese con nosotros 
 
-- By email: somecoolemail@domain.com
+- al correo: mexico.enaloc@gmail.com

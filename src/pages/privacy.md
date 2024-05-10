@@ -1,28 +1,24 @@
 ---
-title: 'Privacy Policy'
+title: 'POLÍTICA DE PRIVACIDAD'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: January 06, 2023
-
-This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
-
-We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy is just a Demo.
+_Ultima vez actualizado_: Abril 03, 2023
 
 ## Interpretation and Definitions
 
-### Interpretation
+### Información recopilada.
 
-The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+<!-- The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
 
 ### Definitions
 
-For the purposes of this Privacy Policy:
+For the purposes of this Privacy Policy: -->
 
-- **Account** means a unique account created for You to access our Service or parts of our Service.
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AstroWind LLC, 1 Cupertino, CA 95014.
-- **Cookies** are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.
-- **Country** refers to: California, United States
+- **Información personal:** cuando crea una cuenta o utiliza ciertas funciones del sitio web de ENLOC MEXICO, podemos recopilar información personal como su nombre, dirección de correo electrónico y otros detalles de contacto.
+- Utilizamos la información recopilada para proporcionar, mantener y mejorar los servicios y la experiencia del usuario de ENALOC MEXICO.
+- Su información personal puede usarse para comunicarnos con usted con respecto a actualizaciones importantes, anuncios u otra información relevante.
+<!-- - **Cookies** are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - **Personal Data** is any information that relates to an identified or identifiable individual.
 - **Service** refers to the Website.
@@ -33,15 +29,28 @@ For the purposes of this Privacy Policy:
 
 ## Collecting and Using Your Personal Data
 
-### Types of Data Collected
+### Types of Data Collected  -->
 
-#### Personal Data
 
-While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
+#### Seguridad de los datos.
 
-- Usage Data
+- ENALOC MEXICO, no venderá, alquilará ni cederá su información personal a terceros. 
 
-#### Usage Data
+- ENALOC MEXICO, implementa medidas de seguridad estándar del portal para proteger su información personal contra acceso no autorizado, pérdida, uso indebido o alteración. 
+
+- Si bien tomamos precauciones razonables, ningún método de transmisión de datos a través de Internet o almacenamiento electrónico es completamente seguro. Por lo tanto, no podemos garantizar una seguridad absoluta. 
+
+#### Menores de edad e incapaces y la edad para entrar al sitio 
+
+El acceso y el uso de ese sitio web sólo podrá ser realizado por aquellas personas que conforme a la legislación aplicable tengan capacidad de ejercicio plena para celebrar actos jurídicos, salvo el caso de que los menores de edad o incapaces cuenten con la autorización y supervisión de sus padres o tutores como usuarios registrados. En caso de que, algún menor de edad o incapaz quiera acceder a los servicios que se ofrecen en este sitio web, deberán ser supervisados por sus padres o tutores, en el entendido de que cualquier acceso al sitio con las claves y nombre de usuario registrado, se entenderá que dicho usuario es el que está accediendo y que, en su caso, es el responsable o tutor legal del menor de edad o incapaz que haga uso del sitio y que lo hace bajo su supervisión. 
+
+## Contacto para más información
+
+Si tiene alguna pregunta, inquietud o solicitud con respecto a esta Política de Privacidad, comuníquese con nosotros 
+
+- al correo: mexico.enaloc@gmail.com 
+
+<!-- #### Usage Data
 
 Usage Data is collected automatically when using the Service.
 
@@ -183,3 +192,4 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 If you have any questions about this Privacy Policy, You can contact us:
 
 - By email: somecoolemail@domain.com
+ -->

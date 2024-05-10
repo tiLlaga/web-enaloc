@@ -5,16 +5,16 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contactos',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="" title="¡Contáctanos!" />
 
-  <ContactUs
+  <!-- <ContactUs
     id="form"
     title="Drop us a message today!"
     subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
@@ -38,41 +38,43 @@ const metadata = {
         'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
     }}
     description="Our support team typically responds within 24 business hours."
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title=""
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-      },
-      {
-        title: 'Contact sales',
+        title: 'Apoyo académico',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+         `Escríbenos si tienes consultas relacionadas con tu situación académica, dudas sobre nosotros en general.`,
       },
       {
-        title: 'Technical support',
+        title: 'Contacto de ventas',
         description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+          'Llámanos si tienes preguntas sobre costos, dudas sobre tus pagos o preguntas por alguno de nuestros productos, etc.',
       },
       {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
+        title: 'WhatsApp',
+        description:
+          '+52 1 771 569 0546',
+        icon: 'tabler:brand-whatsapp',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'mexico.enaloc@gmail.com',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:map-pin',
+        title: 'Teléfonos de contacto',
+        description: '+52 1 771 569 0546, +52 1 55 3185 5974',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Locación',
+        description: 'Plantel virtual',
+        icon: 'tabler:device-laptop',
       },
     ]}
   />
