@@ -123,7 +123,7 @@ export const headerData = {
         },
         {
           text: 'Locución',
-          href: getPermalink('/maintenance'),
+          href: getPermalink('/locucion'),
         },
         {
           text: 'Arte de la expresividad',
@@ -167,14 +167,10 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      links: [
-        { text: 'Términos y condiciones', href: getPermalink('/terms') },
-      ],
+      links: [{ text: 'Términos y condiciones', href: getPermalink('/terms') }],
     },
     {
-      links: [
-        { text: 'Política de privacidad', href: getPermalink('/privacy') }
-      ],
+      links: [{ text: 'Política de privacidad', href: getPermalink('/privacy') }],
     },
     /* {
       title: 'Product',

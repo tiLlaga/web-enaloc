@@ -16,13 +16,27 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline=""
-    title="Especialización en doblaje"
-    subtitle="¿Quieres ser Actor de Doblaje? Capacítate como ACTOR DE DOBLAJE DE VOZ bajo el modelo Power of Voice*."
-  >
+  <Hero>
+    <Fragment slot="title">
+      Especialización en <span class="text-accent dark:text-white highlight" style="color:rgb(210, 134, 0);"
+        >locución comercial</span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      ¿Quieres ser Locutor Comercial y Publicitario? Preparaté como <span class="font-semibold">locutor comercial</span>
+      bajo el modelo Power of Voice*
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Locución comercial enfocado en <span class="font-semibold">
+        100% práctica profesional en estudio profesional
+      </span>, además contamos con nuestra propia cabina de radio y con el equipo profesional para que tomes clases y
+      realices tus prácticas.
+    </Fragment>
+
     <Fragment slot="image">
-      <YouTube id="fnRigHQvZII" title="Astro just Launched.... Could it be the ultimate web framework?" />
+      <YouTube id="q2IwgQhVG7w" title="Locución en Enaloc" />
       <style is:inline>
         lite-youtube {
           margin: 0 auto;
@@ -31,6 +45,17 @@ const metadata = {
       </style>
     </Fragment>
   </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Nuestro objetivo"
+    subtitle="La especialización de Locución Comercial, pretende dotar a los alumnos de una comprensión de lo que realmente sucede en nuestra caja de voz, lo que hacemos con la lengua, las  cavidades de resonancia, la laringe y el proceso de respiración, así como la divisibilidad del propio cuerpo para lograr una articulación y uso idóneo de esa parte en particular, con los cuales, obtendrás un claro acercamiento al mundo profesional del manejo de la voz para la interpretación precisa y sensorial de los diferentes textos comerciales, institucionales, promocionales e interpretativos en el mundo de la publicidad."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
   <!-- image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
       alt: 'Doblaje Enaloc',
@@ -104,30 +129,26 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'Cumple tu sueño',
+        title: 'Mejorar la calidad de la voz y la dicción',
         description:
-          'Conviértete en un gran intérprete del Doblaje de Voz con la técnica más poderosa, completa y efectiva del mundo de habla hispana.',
+          'Se debe desarrollar una voz clara, bien modulada y agradable de escuchar. Ta ayudamos a trabajar en la respiración diafragmática, la articulación de los sonidos y la pronunciación precisa para lograr una dicción impecable.',
         icon: 'tabler:wand',
       },
       {
-        title: 'Desarrolla tu talento',
+        title: 'Desarrollar habilidades expresivas y de interpretación',
         description:
-          'Aprende las estrategias expresivas, interpretativas y expositivas de los expertos más eficaces en el mundo del Doblaje de Voz y la actuación',
+          'La locución no se trata solo de leer un texto, sino de transmitir emociones y mensajes de manera efectiva. Aprende a mejorar tu capacidad para interpretar el contenido de manera convincente, utilizando cambios en el tono, la velocidad y la entonación para añadir expresividad y hacer que el mensaje sea más impactante.',
         icon: 'tabler:settings',
       },
       {
-        title: 'Nuestros coaches',
-        description: 'Práctica en atril con diferentes personajes y sé dirigido por grandes coaches.',
+        title: 'Adquirir técnicas de trabajo frente al micrófono y en diferentes medios',
+        description:
+          'La locución abarca diversos medios, como la radio, la televisión, los podcasts y los proyectos de voz en off. Es importante aprender técnicas específicas para cada medio, como el manejo del micrófono, la distancia adecuada, el control del tiempo y la adaptación al formato y estilo de cada proyecto.',
         icon: 'tabler:presentation',
-      },
-      {
-        title: 'Duración',
-        description: '12 MESES, 9 MÓDULOS, 4HRS POR SESIÓN',
-        icon: 'tabler:calendar',
       },
     ]}
     image={{
-      src: '~/assets/images/enaloc cursos/mar_2.jpg',
+      src: '~/assets/images/enaloc cursos/mar_15.jpg',
       alt: 'Features Image',
     }}
   >

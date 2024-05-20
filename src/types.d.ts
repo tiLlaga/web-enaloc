@@ -216,7 +216,6 @@ export interface Form {
 export interface Hero extends Omit<Headline, 'classes'>, Widget {
   content?: string;
   image?: string | unknown;
-  yturl?: string;
   callToAction1?: CallToAction;
   callToAction2?: CallToAction;
   isReversed?: boolean;

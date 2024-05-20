@@ -10,6 +10,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
+import { YouTube } from 'astro-embed';
 
 const metadata = {
   title: 'Banco de talentos',
@@ -41,15 +42,22 @@ const metadata = {
 
   <!-- Hero2 Widget ******************* -->
 
-  <Hero
-    id="hero"
-    title="Conoce a nuestros talentos"
-    tagline=""
-    >
+  <Hero id="hero" title="Conoce a nuestros talentos" tagline="">
     <!-- actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]} -->
     <Fragment slot="subtitle">
-      Los talentos de doblaje y locución destacan por su aguda observación, versatilidad vocal y capacidad actoral. 
-      Con una habilidad única para transformar su voz y transmitir emociones, están preparados para convertirse en maestros del arte de dar vida a personajes a través del sonido.
+      Los talentos de doblaje y locución destacan por su aguda observación, versatilidad vocal y capacidad actoral. Con
+      una habilidad única para transformar su voz y transmitir emociones, están preparados para convertirse en maestros
+      del arte de dar vida a personajes a través del sonido.
+    </Fragment>
+
+    <Fragment slot="image">
+      <YouTube id="nAwsAReKJ80" title="Astro just Launched.... Could it be the ultimate web framework?" />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      </style>
     </Fragment>
   </Hero>
 
@@ -59,7 +67,6 @@ const metadata = {
     id="about"
     columns={3}
     scurl="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/114099508&color=%235588aa&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-    
     image={{
       src: '~/assets/images/talentos/paulaElena.jpg',
       alt: 'Paula Elena',
@@ -67,25 +74,29 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sobre mí, Paula Elena: </h2>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sobre mí, Paula Elena:</h2>
       <p>
-        Soy una actriz de doblaje con una pasión ardiente por dar vida a personajes a través de mi voz. Con una versatilidad vocal excepcional, puedo adoptar una amplia gama de tonos, 
-        matices y estilos para encarnar desde heroínas valientes hasta villanas astutas.         
+        Soy una actriz de doblaje con una pasión ardiente por dar vida a personajes a través de mi voz. Con una
+        versatilidad vocal excepcional, puedo adoptar una amplia gama de tonos, matices y estilos para encarnar desde
+        heroínas valientes hasta villanas astutas.
       </p>
       <br />
       <p>
-        Mi habilidad actoral me permite transmitir emociones de manera auténtica y cautivadora, conectando con la audiencia en un nivel profundo y emocional. 
-        
+        Mi habilidad actoral me permite transmitir emociones de manera auténtica y cautivadora, conectando con la
+        audiencia en un nivel profundo y emocional.
       </p>
       <br />
-      <p>Con dedicación, creatividad y determinación, estoy lista para enfrentar cualquier desafío que se me presente en el emocionante mundo del doblaje.</p>
+      <p>
+        Con dedicación, creatividad y determinación, estoy lista para enfrentar cualquier desafío que se me presente en
+        el emocionante mundo del doblaje.
+      </p>
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </SCplayer>
-  
+
   <!-- SCplayer Widget **************** -->
 
   <SCplayer
@@ -102,22 +113,27 @@ const metadata = {
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sobre mí, Francisco Zarate</h2>
       <p>
-        Soy un actor de doblaje apasionado y comprometido con el arte de dar vida a personajes a través de mi voz. Con una versatilidad vocal excepcional, 
-        puedo transformar mi tono, ritmo y estilo para encarnar una amplia variedad de personajes, desde héroes valientes hasta villanos intrigantes. 
+        Soy un actor de doblaje apasionado y comprometido con el arte de dar vida a personajes a través de mi voz. Con
+        una versatilidad vocal excepcional, puedo transformar mi tono, ritmo y estilo para encarnar una amplia variedad
+        de personajes, desde héroes valientes hasta villanos intrigantes.
       </p>
       <br />
       <p>
-        Mi habilidad actoral me permite transmitir emociones de manera auténtica y convincente, creando interpretaciones que resuenan con la audiencia y añaden profundidad a cada personaje. 
+        Mi habilidad actoral me permite transmitir emociones de manera auténtica y convincente, creando interpretaciones
+        que resuenan con la audiencia y añaden profundidad a cada personaje.
       </p>
       <br />
-      <p>Con un profundo compromiso con mi oficio y un deseo constante de crecer y mejorar, estoy listo para dejar una marca indeleble en el mundo del doblaje.</p>
+      <p>
+        Con un profundo compromiso con mi oficio y un deseo constante de crecer y mejorar, estoy listo para dejar una
+        marca indeleble en el mundo del doblaje.
+      </p>
     </Fragment>
 
     <Fragment slot="">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </SCplayer>
-  
+
   <!-- SCplayer Widget **************** -->
 
   <SCplayer
@@ -133,15 +149,18 @@ const metadata = {
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sobre mí</h2>
       <p>
-        Como locutora, mi voz es mi herramienta más poderosa. Con una voz versátil y cautivadora, tengo la capacidad de transmitir emociones, contar historias y conectar con la audiencia de manera única. 
+        Como locutora, mi voz es mi herramienta más poderosa. Con una voz versátil y cautivadora, tengo la capacidad de
+        transmitir emociones, contar historias y conectar con la audiencia de manera única.
       </p>
       <br />
       <p>
-        Mi habilidad para adaptar mi tono, ritmo y estilo según las necesidades del proyecto me permite abordar una amplia variedad de géneros y formatos, desde anuncios comerciales hasta narraciones emocionantes. 
+        Mi habilidad para adaptar mi tono, ritmo y estilo según las necesidades del proyecto me permite abordar una
+        amplia variedad de géneros y formatos, desde anuncios comerciales hasta narraciones emocionantes.
       </p>
       <br />
       <p>
-        Además, mi experiencia en la interpretación me permite dar vida a los textos de manera convincente y persuasiva, manteniendo la atención del público y dejando una impresión duradera.
+        Además, mi experiencia en la interpretación me permite dar vida a los textos de manera convincente y persuasiva,
+        manteniendo la atención del público y dejando una impresión duradera.
       </p>
     </Fragment>
 
@@ -188,7 +207,7 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  /> --> 
+  /> -->
 
   <!-- Features3 Widget ************** -->
 
@@ -200,39 +219,48 @@ const metadata = {
     items={[
       {
         title: 'Versatilidad vocal',
-        description: 'La capacidad de modificar la voz para adaptarse a una amplia variedad de personajes y estilos es fundamental tanto para los actores de doblaje como para los locutores. Esto incluye cambios en el tono, la entonación, el ritmo y el estilo de habla.',
+        description:
+          'La capacidad de modificar la voz para adaptarse a una amplia variedad de personajes y estilos es fundamental tanto para los actores de doblaje como para los locutores. Esto incluye cambios en el tono, la entonación, el ritmo y el estilo de habla.',
       },
       {
         title: 'Habilidad actoral',
-        description: ' La capacidad de transmitir emociones de manera creíble y auténtica es esencial para dar vida a los personajes y para mantener la atención del público durante la locución.',
+        description:
+          ' La capacidad de transmitir emociones de manera creíble y auténtica es esencial para dar vida a los personajes y para mantener la atención del público durante la locución.',
       },
       {
         title: 'Observación aguda',
-        description: 'La capacidad de captar los matices de las interpretaciones originales y de adaptarlas de manera precisa es crucial para los actores de doblaje, mientras que la habilidad para detectar detalles en los guiones y en las instrucciones del cliente es importante para los locutores.',
+        description:
+          'La capacidad de captar los matices de las interpretaciones originales y de adaptarlas de manera precisa es crucial para los actores de doblaje, mientras que la habilidad para detectar detalles en los guiones y en las instrucciones del cliente es importante para los locutores.',
       },
       {
         title: 'Sincronización labial',
-        description: 'Para los actores de doblaje, la capacidad de sincronizar la interpretación con los movimientos labiales de los personajes en pantalla es fundamental para crear una experiencia de visualización fluida y creíble.',
+        description:
+          'Para los actores de doblaje, la capacidad de sincronizar la interpretación con los movimientos labiales de los personajes en pantalla es fundamental para crear una experiencia de visualización fluida y creíble.',
       },
       {
         title: 'Flexibilidad y adaptabilidad',
-        description: 'Tanto los actores de doblaje como los locutores deben estar preparados para trabajar en una variedad de proyectos, desde comerciales de televisión hasta audiolibros, y deben ser capaces de adaptarse a diferentes estilos y géneros.',
+        description:
+          'Tanto los actores de doblaje como los locutores deben estar preparados para trabajar en una variedad de proyectos, desde comerciales de televisión hasta audiolibros, y deben ser capaces de adaptarse a diferentes estilos y géneros.',
       },
       {
         title: 'Capacidad de interpretación',
-        description: ' Los actores de doblaje deben ser capaces de comprender la psicología y la motivación de sus personajes para darles vida de manera auténtica, mientras que los locutores deben ser capaces de interpretar el contenido del guion de manera convincente y persuasiva.',
+        description:
+          ' Los actores de doblaje deben ser capaces de comprender la psicología y la motivación de sus personajes para darles vida de manera auténtica, mientras que los locutores deben ser capaces de interpretar el contenido del guion de manera convincente y persuasiva.',
       },
       {
         title: 'Creatividad',
-        description: 'La capacidad de aportar creatividad y originalidad a las interpretaciones es importante tanto para los actores de doblaje como para los locutores, ya que les permite destacarse y dejar una impresión duradera en el público.',
+        description:
+          'La capacidad de aportar creatividad y originalidad a las interpretaciones es importante tanto para los actores de doblaje como para los locutores, ya que les permite destacarse y dejar una impresión duradera en el público.',
       },
       {
         title: 'Técnica vocal',
-        description: 'La comprensión de la técnica vocal, incluyendo la respiración, la proyección y el control de la voz, es esencial para mantener la salud vocal y para lograr interpretaciones de alta calidad de manera consistente.',
+        description:
+          'La comprensión de la técnica vocal, incluyendo la respiración, la proyección y el control de la voz, es esencial para mantener la salud vocal y para lograr interpretaciones de alta calidad de manera consistente.',
       },
       {
         title: 'Colaboración',
-        description: 'Tanto los actores de doblaje como los locutores a menudo trabajan en equipo con directores, productores y otros profesionales del audio, por lo que la capacidad de colaborar de manera efectiva y de aceptar la retroalimentación es crucial para el éxito en la industria.',
+        description:
+          'Tanto los actores de doblaje como los locutores a menudo trabajan en equipo con directores, productores y otros profesionales del audio, por lo que la capacidad de colaborar de manera efectiva y de aceptar la retroalimentación es crucial para el éxito en la industria.',
       },
     ]}
   />

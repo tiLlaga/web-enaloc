@@ -12,6 +12,8 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+import { YouTube } from 'astro-embed';
+
 const metadata = {
   title: 'Enaloc',
   ignoreTitleTemplate: true,
@@ -22,23 +24,33 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <!-- image={{ src: '~/assets/images/hero-image.png', alt: 'Enaloc school' }} -->
-  <Hero
-    actions={[{ text: 'Aprende más', href: '/contact' }]}
-    yturl="https://www.youtube-nocookie.com/embed/cAK6Bak8pBw?si=wXLmWxQtnLPw1Osy&amp;controls=0"
-  >
+  <Hero actions={[{ text: 'Aprende más', href: '/contact' }]}>
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight" style="color:rgb(210, 134, 0);"> Escuela Nacional de Locución México </span>
+      <span class="text-accent dark:text-white highlight" style="color:rgb(210, 134, 0);">
+        Escuela Nacional de Locución México
+      </span>
       Descubre tu voz. <span class="hidden xl:inline">Conquista el mundo.</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        En la <span class="font-semibold">Escuela Nacional de Locución México </span> creemos en tu talento, pero te ayudamos a pulirlo, con conocimiento
-        y por supuesto de la mano de todos nuestros coaches que te guiarán por el mejor de los caminos.</span
+        En la <span class="font-semibold">Escuela Nacional de Locución México </span> creemos en tu talento, pero te ayudamos
+        a pulirlo, con conocimiento y por supuesto de la mano de todos nuestros coaches que te guiarán por el mejor de los
+        caminos.</span
       >
       <span class="block mb-1 sm:hidden font-bold text-blue-600"
         >¡Descubre el poder de tu voz con <span class="text-green-500 dark:text-white highlight"> Enaloc</span>!</span
       >
+    </Fragment>
+
+    <Fragment slot="image">
+      <YouTube id="cAK6Bak8pBw" title="Astro just Launched.... Could it be the ultimate web framework?" />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      </style>
     </Fragment>
   </Hero>
 
@@ -56,32 +68,28 @@ const metadata = {
     items={[
       {
         title: 'Banco de talentos',
-        description:
-          'Donde puedes comenzar a tener llamados según tus habilidades mostradas en las especializaciones.',
+        description: 'Donde puedes comenzar a tener llamados según tus habilidades mostradas en las especializaciones.',
         icon: 'tabler:microphone',
       },
       {
         title: 'Formación completa',
-        description:
-          'En las áreas de doblaje, actuación, locución y comunicación estratégica.',
+        description: 'En las áreas de doblaje, actuación, locución y comunicación estratégica.',
         icon: 'tabler:notebook',
       },
       {
         title: 'Plan de estudios estructurado',
-        description:
-          'A través del modelo educativo power of voice, único en el mundo de habla hispana.',
+        description: 'A través del modelo educativo Power of voice, único en el mundo de habla hispana.',
         icon: 'tabler:list-check',
       },
       {
         title: 'Power of voice',
         description:
-          'Acceso a la plataforma power of voice para repasar y complementar tus clases mediante retos, test y evaluaciones.',
+          'Acceso a la plataforma Power of voice para repasar y complementar tus clases mediante retos, test y evaluaciones.',
         icon: 'tabler:rocket',
       },
       {
         title: 'Nuestros coaches',
-        description:
-          "Clase con actores y locutores con más de 35 años de experiencia.",
+        description: 'Clase con actores y locutores con más de 35 años de experiencia.',
         icon: 'tabler:user-filled',
       },
       {
@@ -97,9 +105,8 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'Alumnos', amount: '+1000' },
-      { title: 'Coaches', amount: '30' },
-      { title: 'Egresados', amount: '600' },
+      { title: 'Alumnos activos', amount: '+196' },
+      { title: 'Coaches', amount: '29' },
       // { title: '', amount: '48.4K' },
     ]}
   />
@@ -130,7 +137,7 @@ const metadata = {
       }, */
     ]}
     image={{
-      src: '~/assets/images/enaloc cursos/mar_2.jpg',
+      src: '~/assets/images/enaloc cursos/mar_49.jpg',
       alt: 'Colorful Image',
     }}
   >
@@ -175,7 +182,8 @@ const metadata = {
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         ¡Bienvenido a “3x3: Taller Avanzado de Doblaje”!
       </h3>
-      ¡Tres maestros del doblaje, durante tres horas a la semana, durante tres meses, no pierdas la oportunidad de aprender de los mejores!
+      ¡Tres maestros del doblaje, durante tres horas a la semana, durante tres meses, no pierdas la oportunidad de aprender
+      de los mejores!
     </Fragment>
 
     <Fragment slot="bg">
@@ -191,8 +199,7 @@ const metadata = {
     items={[
       {
         title: 'Introducción al Mundo de la Locución',
-        description:
-          'Aprende a controlar tu voz y a transmitir emociones de manera auténtica y convincente.',
+        description: 'Aprende a controlar tu voz y a transmitir emociones de manera auténtica y convincente.',
       },
       {
         title: 'Dominio de la Voz y Expresión Emociona',
@@ -341,7 +348,7 @@ const metadata = {
       {
         title: '¿Se aprende desde casa?',
         description:
-          "Si, puedes estudiar desde tu casa de manera online, ya que contamos con un modelo educativo organizado a través de módulos en vivo, seguimiento a través de tutorias y una plataforma online. Tendrás la oportunidad de prácticar en vivo con especialistas de la voz y figuras del medio.",
+          'Si, puedes estudiar desde tu casa de manera online, ya que contamos con un modelo educativo organizado a través de módulos en vivo, seguimiento a través de tutorias y una plataforma online. Tendrás la oportunidad de prácticar en vivo con especialistas de la voz y figuras del medio.',
       },
       {
         title: '¿Requiero haber estudiado ciencias de la comunicación para hacer locución?',
@@ -351,22 +358,20 @@ const metadata = {
       {
         title: '¿Es indispensable tener la carrera de actuación para estudiar doblaje? ',
         description:
-          "No es necesario, dentro de la preparación tendrás bases importantes de actuación y el modelo educativo Power of voice te brindará las habilidades necesarias para hacer doblaje profesional.",
+          'No es necesario, dentro de la preparación tendrás bases importantes de actuación y el modelo educativo Power of voice te brindará las habilidades necesarias para hacer doblaje profesional.',
       },
       {
         title: '¿Hay un límite de edad? ',
-        description:
-          "No hay limite, puedes iniciar si tienes todo el deseo de alcanzar tus metas.",
+        description: 'No hay limite, puedes iniciar si tienes todo el deseo de alcanzar tus metas.',
       },
       {
         title: '¿Necesito experiencia para estudiar doblaje o Locución? ',
-        description:
-          "No, con nosotros vas a adquirir desde cero todas las habilidades para la locución.",
+        description: 'No, con nosotros vas a adquirir desde cero todas las habilidades para la locución.',
       },
       {
         title: '¿Aprenderé a mejorar mi dicción y a modular mi voz? ',
         description:
-          "Si, es parte fundamental de los módulos que vas a aprender a través del modelo educativo Power of voice. ",
+          'Si, es parte fundamental de los módulos que vas a aprender a través del modelo educativo Power of voice. ',
       },
       {
         title: '¿Se puede vivir del doblaje y la locución?',
@@ -375,13 +380,12 @@ const metadata = {
       },
       {
         title: '¿Si tengo una voz nasal o no me gusta mi voz puedo estudiar?',
-        description:
-          "Por supuesto ¡todas las voces funcionan! con base en una preparación.",
+        description: 'Por supuesto ¡todas las voces funcionan! con base en una preparación.',
       },
       {
         title: '¿Puedo generar ingresos a través de mi voz?',
         description:
-          "Claro que si, el desempeño, la constancia, y disciplina son fundamentales para comenzar a tener llamados en el doblaje y la locución.",
+          'Claro que si, el desempeño, la constancia, y disciplina son fundamentales para comenzar a tener llamados en el doblaje y la locución.',
       },
     ]}
   />
