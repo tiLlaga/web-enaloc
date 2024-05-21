@@ -1,3 +1,8 @@
+[[redirects]]
+from = "/*"
+to = "/"
+status = 404
+
 [build]
   publish = "dist"
   command = "npm run build"
