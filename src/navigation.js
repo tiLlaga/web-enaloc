@@ -222,9 +222,10 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ], */
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/enalocmx' },
+    { ariaLabel: 'Tik Tok', icon: 'tabler:brand-tiktok', href: 'https://www.tiktok.com/@enalocmx' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/enalocmx/' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://es-la.facebook.com/enalocmx/' },
+    { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/c/EnalocM%C3%A9xico' },
     // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
