@@ -169,6 +169,12 @@ export interface Input {
   placeholder?: string;
 }
 
+export interface Select {
+  label?: string;
+  name?: string;
+  placeholder?: string;
+  options: string[];
+}
 export interface Textarea {
   label?: string;
   name?: string;
@@ -207,6 +213,7 @@ export interface Collapse {
 export interface Form {
   inputs?: Array<Input>;
   textarea?: Textarea;
+  select?: Select;
   disclaimer?: Disclaimer;
   button?: string;
   description?: string;

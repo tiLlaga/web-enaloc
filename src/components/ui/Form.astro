@@ -2,7 +2,7 @@
 import type { Form as Props } from '~/types';
 import Button from '~/components/ui/Button.astro';
 
-const { inputs, textarea, disclaimer, button = 'Contáctanos', description = '' } = Astro.props;
+const { inputs, textarea, select, disclaimer, button = 'Contáctanos', description = '' } = Astro.props;
 ---
 
 <form name="contact" method="POST" data-netlify="true">
@@ -28,6 +28,22 @@ const { inputs, textarea, disclaimer, button = 'Contáctanos', description = '' 
             </div>
           )
       )
+  }
+
+  {
+    select && (
+      <div class="mb-6">
+        <label for={select.name} class="block text-sm font-medium">
+          {select.label}
+          <select
+            name={`${select.name}[]`}
+            class="py-3 px-1 w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+          >
+            {select.options.map((option) => option && <option value={option}>{option}</option>)}
+          </select>
+        </label>
+      </div>
+    )
   }
 
   {
