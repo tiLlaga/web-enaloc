@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import { getHomePermalink } from '~/utils/permalinks';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const title = `Registrado`;
+---
+
+<Layout metadata={{ title }}>
+  <CallToAction
+    title="Registrado"
+    subtitle="Pronto un miembro de nuestro equipo se pondra en contacto contigo."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Volver al sitio',
+        href: '/',
+        icon: 'tabler:home',
+      },
+    ]}
+  />
+</Layout>
