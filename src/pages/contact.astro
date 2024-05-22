@@ -5,7 +5,7 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contactos',
+  title: 'Contacto',
 };
 ---
 
@@ -14,15 +14,30 @@ const metadata = {
 
   <HeroText tagline="" title="¡Contáctanos!" />
 
-  <!-- <ContactUs
+  <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="¡Envíanos un mensaje hoy!"
+    subtitle="Para obtener respuestas más rápidas, explore nuestra sección de preguntas frecuentes. ¡Quizás encuentres allí mismo la solución que estás buscando! Si no, nuestro equipo de soporte estará encantado de ayudarle."
     inputs={[
       {
         type: 'text',
-        name: 'name',
-        label: 'Name',
+        name: 'nombre',
+        label: 'Nombre(s)',
+      },
+      {
+        type: 'text',
+        name: 'apPaterno',
+        label: 'Apellido paterno',
+      },
+      {
+        type: 'text',
+        name: 'apMaterno',
+        label: 'Apellido materno',
+      },
+      {
+        type: 'number',
+        name: 'whatsApp',
+        label: 'Número de WhatsApp',
       },
       {
         type: 'email',
@@ -31,14 +46,14 @@ const metadata = {
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: '¿Qué te interesa de Enaloc?',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'Al enviar este formulario de contacto, usted reconoce y acepta la recopilación de su información personal.',
     }}
-    description="Our support team typically responds within 24 business hours."
-  /> -->
+    description="Nuestro equipo de soporte normalmente responde dentro de las 24 horas hábiles."
+  />
 
   <!-- Features2 Widget ************** -->
 
