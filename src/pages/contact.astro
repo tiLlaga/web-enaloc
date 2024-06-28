@@ -1,11 +1,11 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import Layout from "~/layouts/PageLayout.astro";
+import HeroText from "~/components/widgets/HeroText.astro";
+import ContactUs from "~/components/widgets/Contact.astro";
+import Features2 from "~/components/widgets/Features2.astro";
 
 const metadata = {
-  title: 'Contacto',
+  title: "Contacto",
 };
 ---
 
@@ -20,42 +20,42 @@ const metadata = {
     subtitle="Para obtener respuestas más rápidas, explore nuestra sección de preguntas frecuentes. ¡Quizás encuentres allí mismo la solución que estás buscando! Si no, nuestro equipo de soporte estará encantado de ayudarle."
     inputs={[
       {
-        type: 'text',
-        name: 'nombre',
-        label: 'Nombre(s)',
+        type: "text",
+        name: "nombre",
+        label: "Nombre(s)",
       },
       {
-        type: 'text',
-        name: 'apPaterno',
-        label: 'Apellido paterno',
+        type: "text",
+        name: "apPaterno",
+        label: "Apellido paterno",
       },
       {
-        type: 'text',
-        name: 'apMaterno',
-        label: 'Apellido materno',
+        type: "text",
+        name: "apMaterno",
+        label: "Apellido materno",
       },
       {
-        type: 'number',
-        name: 'whatsApp',
-        label: 'Número de WhatsApp',
+        type: "number",
+        name: "whatsApp",
+        label: "Número de WhatsApp",
       },
       {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
+        type: "email",
+        name: "email",
+        label: "Email",
       },
     ]}
     select={{
-      name: 'especialidad',
-      label: 'Especialidad preferida',
-      options: ['Doblaje', 'Especialidad'],
+      name: "especialidad",
+      label: "Especialidad preferida",
+      options: ["Doblaje", "Especialidad"],
     }}
     textarea={{
-      label: '¿Por qué te gustaría estudiar esta especialización?',
+      label: "¿Por qué te gustaría estudiar esta especialización?",
     }}
     disclaimer={{
       label:
-        'Al enviar este formulario de contacto, usted reconoce y acepta la recopilación de su información personal.',
+        "Al enviar este formulario de contacto, usted reconoce y acepta la recopilación de su información personal.",
     }}
     description="Nuestro equipo de soporte normalmente responde dentro de las 24 horas hábiles."
   />
@@ -66,24 +66,24 @@ const metadata = {
     title=""
     items={[
       {
-        title: 'WhatsApp (admisiones)',
-        description: '+52 1 771 569 0546',
-        icon: 'tabler:brand-whatsapp',
+        title: "WhatsApp (admisiones)",
+        description: "+52 55 1565 0776",
+        icon: "tabler:brand-whatsapp",
       },
       {
-        title: 'Email (académico)',
-        description: 'mexico.enaloc@gmail.com',
-        icon: 'tabler:mail',
+        title: "Email (académico)",
+        description: "mexico.enaloc@gmail.com",
+        icon: "tabler:mail",
       },
       {
-        title: 'Teléfonos de contacto',
-        description: '+52 1 771 569 0546, +52 1 55 3185 5974',
-        icon: 'tabler:headset',
+        title: "Teléfonos de contacto",
+        description: "+52 55 1565 0776, +52 55 3185 5974",
+        icon: "tabler:headset",
       },
       {
-        title: 'Locación',
-        description: 'Plantel virtual',
-        icon: 'tabler:device-laptop',
+        title: "Locación",
+        description: "Plantel virtual",
+        icon: "tabler:device-laptop",
       },
     ]}
   />
