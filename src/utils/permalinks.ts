@@ -87,7 +87,14 @@ export const getPermalink = (slug = '', type = 'page'): string => {
 };
 
 /** */
-export const getHomePermalink = (): string => getPermalink('/');
+export const getHomePermalink = (page: string): string => {
+  const licenciaturaPages = ['/inicioLicenciatura', '/programaTitulacion', '/beneficios', '/contactanosLicenciatura'];
+  const isLicenciaturaPage = licenciaturaPages.includes(page);
+
+  if (page && isLicenciaturaPage) return getPermalink('/inicioLicenciatura');
+
+  return getPermalink('/');
+};
 
 /** */
 export const getBlogPermalink = (): string => getPermalink(BLOG_BASE);

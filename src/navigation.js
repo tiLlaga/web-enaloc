@@ -1,5 +1,26 @@
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
+export const headerDataLicenciatura = {
+  links: [
+    {
+      text: 'Inicio',
+      href: '/inicioLicenciatura',
+    },
+    {
+      text: 'Programa de Titulación',
+      href: '/programaTitulacion',
+    },
+    {
+      text: 'Beneficios',
+      href: '/beneficios',
+    },
+    {
+      text: 'Contáctanos',
+      href: '/contactanosLicenciatura',
+    },
+  ],
+};
+
 export const headerData = {
   links: [
     /* {
