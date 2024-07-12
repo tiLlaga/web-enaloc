@@ -1,10 +1,10 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink /* getBlogPermalink, getAsset */ } from './utils/permalinks';
 
-export const headerDataLicenciatura = {
+export const headerDataTitulacion = {
   links: [
     {
       text: 'Inicio',
-      href: '/inicioLicenciatura',
+      href: '/titulacion2024',
     },
     {
       text: 'Programa de Titulación',

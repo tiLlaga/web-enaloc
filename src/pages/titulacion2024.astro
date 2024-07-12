@@ -2,13 +2,16 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+// import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
 
-import { YouTube } from 'astro-embed';
+import { Accordion, AccordionItem } from 'accessible-astro-components';
+
+// import { YouTube } from 'astro-embed';
 
 const metadata = {
   title: 'Enaloc - Licenciatura',
@@ -20,27 +23,29 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <!-- image={{ src: '~/assets/images/hero-image.png', alt: 'Enaloc school' }} -->
-  <Hero actions={[{ text: '¡Inscríbete Ahora!', href: '/contact' }]}>
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: '¡Inscríbete Ahora!',
+        href: '/contact',
+        target: '_blank',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+      { text: '¡Solicita información!', href: '/contact' },
+    ]}
+    image={{ src: '~/assets/images/titulacion1.jpg', alt: 'AstroWind Hero Image' }}
+  >
     <Fragment slot="title">
-      Titulación en Locución de
-      <span class="text-accent dark:text-white highlight" style="color:rgb(210, 134, 0);"> ENALOC </span>
+      Convierte tu Pasión en una Carrera Profesional
+      <!-- <span class="text-accent dark:text-white highlight" style="color:rgb(210, 134, 0);"> ENALOC </span> -->
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="">
-        El objetivo principal de esta campaña es promocionar la titulación en locución para alumnos y egresados de <span
-          class="font-semibold"
-          >Escuela Nacional de Locución México
-        </span> que ya poseen conocimientos y experiencia en el campo. Esta titulación les permitirá obtener un certificado
-        oficial con validez oficial, validando su especialización y conocimientos adquiridos a través de los cursos y talleres,
-        especialmente el curso "Power of Voice".</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600"
-        >¡Descubre el poder de tu voz con <span class="text-green-500 dark:text-white highlight"> Enaloc</span>!</span
-      >
+      Obtén tu título en locución con <span class="font-semibold">validez oficial </span> y abre nuevas puertas en tu carrera.
     </Fragment>
 
-    <Fragment slot="image">
+    <!-- <Fragment slot="image">
       <YouTube id="cAK6Bak8pBw" title="" />
       <style is:inline>
         lite-youtube {
@@ -48,107 +53,179 @@ const metadata = {
           max-width: 100%;
         }
       </style>
-    </Fragment>
+    </Fragment> -->
   </Hero>
 
+  <!-- Content Widget **************** -->
+
+  <Hero2
+    tagline=""
+    title="Valida tus Conocimientos y Obtén tu Título"
+    subtitle="Si ya has invertido tiempo y esfuerzo en formarte como locutor, ahora es el momento de certificar esos conocimientos con un título con validez oficial. Las empresas buscan profesionales certificados, lo que te brinda una ventaja competitiva en el mercado."
+    actions={[
+      {
+        variant: 'primary',
+        text: '¡Inscríbete Ahora!',
+        href: '/contact',
+        target: '_blank',
+        icon: 'tabler:square-rounded-arrow-right',
+      },
+      { text: '¡Solicita información!', href: '/contact' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Click-through Landing Page Hero Image',
+    }}
+  />
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <!-- <Note /> -->
 
   <!-- Features Widget *************** -->
 
   <Features
-    id="quiensomos"
+    id="beneficios"
     tagline=""
-    title="Nosotros"
-    subtitle="Nuestras clases interactivas te ofrecen una experiencia educativa de calidad, donde podrás desarrollar tus habilidades vocales con la guía de expertos en el campo. "
+    title="Confianza y Seguridad para las Empresas"
+    subtitle="Las empresas prefieren trabajar con profesionales de la voz certificados. Tener un título avalado por autoridades oficiales te brinda la confianza y seguridad de que estás en manos de expertos."
     items={[
       {
-        title: 'Banco de talentos',
-        description: 'Donde puedes comenzar a tener llamados según tus habilidades mostradas en las especializaciones.',
-        icon: 'tabler:microphone',
+        title: 'Las empresas prefieren trabajar con profesionales de la voz certificados.',
+        description: '',
+        icon: 'tabler:certificate',
       },
       {
-        title: 'Formación completa',
-        description: 'En las áreas de doblaje, actuación, locución y comunicación estratégica.',
-        icon: 'tabler:notebook',
+        title: '',
+        description:
+          'Tener un título avalado por autoridades oficiales te brinda la confianza y seguridad de que estás en manos de expertos.',
+        icon: 'tabler:shield-lock',
       },
-      {
-        title: 'Plan de estudios estructurado',
-        description: 'A través del modelo educativo Power of voice, único en el mundo de habla hispana.',
+      /* {
+        title: '',
+        description: '',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Power of voice',
-        description:
-          'Acceso a la plataforma Power of voice para repasar y complementar tus clases mediante retos, test y evaluaciones.',
+        title: '',
+        description: '',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Nuestros coaches',
-        description: 'Clase con actores y locutores con más de 35 años de experiencia.',
+        title: '',
+        description: '',
         icon: 'tabler:user-filled',
       },
       {
-        title: 'Clases de home studio',
-        description:
-          'Para saber cómo grabar a distancia y plan de tutorías para contar con un acompañamiento durante la especialización.',
+        title: '',
+        description: '',
         icon: 'tabler:bulb',
+      }, */
+    ]}
+  />
+  <Pricing
+    title="Una Inversión Accesible"
+    subtitle="El costo de nuestro programa es uno de los más bajos del mercado, y ofrecemos pagos diferidos sin intereses para hacerlo aún más alcanzable. ¡Haz realidad tu certificación profesional hoy!"
+    prices={[
+      {
+        title: 'free',
+        subtitle: 'Access to core features and a wide range of templates',
+        price: '0',
+        period: '/ month',
+        callToAction: {
+          target: '_blank',
+          text: 'Get Started for Free',
+          href: '#',
+        },
+      },
+      {
+        title: 'pro',
+        subtitle: 'Premium templates and advanced customization',
+        price: 15,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Upgrade to Pro',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'Enterprise',
+        subtitle: 'Tailored solutions for large-scale projects',
+        price: 45,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Unlock Enterprise Features',
+          href: '#',
+        },
       },
     ]}
   />
 
+  <div class="mb-4 mx-4">
+    <Fragment>
+      <Accordion class="rounded-sm">
+        <AccordionItem header="First Item">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
+            accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
+            veritatis laboriosam est tenetur.
+          </p>
+          <a href="#">Tab to me!</a>
+        </AccordionItem>
+        <AccordionItem header="Second Item">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
+            accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
+            veritatis laboriosam est tenetur.
+          </p>
+        </AccordionItem>
+        <AccordionItem header="Second Item">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
+            accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
+            veritatis laboriosam est tenetur.
+          </p>
+        </AccordionItem>
+        <AccordionItem header="Second Item">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
+            accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
+            veritatis laboriosam est tenetur.
+          </p>
+        </AccordionItem>
+
+        <style is:global>
+          .accordion__item {
+            border: none;
+          }
+          .accordion__header {
+            border: none;
+          }
+          .accordion__panel {
+            border: none;
+          }
+          .accordion__ {
+            border: none;
+          }
+        </style>
+
+        <!-- ... -->
+      </Accordion>
+    </Fragment>
+  </div>
+
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     stats={[
       { title: 'Alumnos activos', amount: '+196' },
       { title: 'Coaches', amount: '29' },
       // { title: '', amount: '48.4K' },
     ]}
-  />
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    id=""
-    isReversed
-    tagline=""
-    title=""
-    items={[
-      {
-        title: '',
-        description:
-          '¿Alguna vez has soñado con ser la voz detrás de los héroes de acción, los villanos intrépidos o los entrañables personajes animados? ¡Ahora es tu oportunidad de convertir ese sueño en realidad!',
-      },
-      /* 
-      {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
-      },
-      {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-      }, */
-    ]}
-    image={{
-      src: '~/assets/images/enaloc cursos/mar_49.jpg',
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Conoce nuestros cursos en doblaje
-      </h3>
-      ¡Descubre el arte del doblaje y da vida a tus personajes favoritos con nuestro curso de doblaje profesional!
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+  /> -->
 
   <!-- Content Widget **************** -->
 

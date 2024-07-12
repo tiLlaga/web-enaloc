@@ -87,11 +87,11 @@ export const getPermalink = (slug = '', type = 'page'): string => {
 };
 
 /** */
-export const getHomePermalink = (page: string): string => {
-  const licenciaturaPages = ['/inicioLicenciatura', '/programaTitulacion', '/beneficios', '/contactanosLicenciatura'];
-  const isLicenciaturaPage = licenciaturaPages.includes(page);
+export const getHomePermalink = (page?: string): string => {
+  const titulacionPages = ['/titulacion2024', '/programaTitulacion', '/beneficios', '/contactanosTitulacion'];
+  const isTitulacionPage = titulacionPages.includes(page);
 
-  if (page && isLicenciaturaPage) return getPermalink('/inicioLicenciatura');
+  if (page && isTitulacionPage) return getPermalink('/titulacion2024');
 
   return getPermalink('/');
 };
